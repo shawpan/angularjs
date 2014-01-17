@@ -2,7 +2,15 @@ var app = angular.module("DemoInstantSearch", []);
 var controllers = {};
 var filters = {};
 var factories = {};
+var directives = {};
 
+directives.movie = function()
+{
+	return {
+		restrict : "E",
+		templateUrl: "movie.html"
+	}
+}
 factories.Movies = function()
 {
 	return [{
@@ -72,3 +80,4 @@ filters.SearchFor = function(){
 app.controller(controllers);
 app.filter(filters);
 app.factory(factories);
+app.directive(directives);

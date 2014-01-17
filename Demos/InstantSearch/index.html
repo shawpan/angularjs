@@ -13,13 +13,7 @@
 	</div>
 
 		<div ng-repeat="movie in InstantSearchController.movies | SearchFor:searchString">
-			<div class="panel">
-				<a href="{{movie.url}}">
-					<img class="th" ng-src="{{movie.image}}" />
-					<span class="panel">{{movie.title}}</span>
-				</a>
-				
-			</div>
+			<movie></movie>
 		</div>
 	
 </div>
